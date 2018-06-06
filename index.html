@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Android Libs Downloader</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css'>
+        <link rel='stylesheet' href='https://unpkg.com/bulma-switch@1.0.2/dist/bulma-switch.min.css'>
+        <script type="text/javascript" src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+    </head>
+    <body>
+        <section class="hero is-link">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">Android Libs Downloader</h1>
+                    <h2 class="subtitle">
+                        <span>Downloads AAR Libs directly from Google Maven, GitHub, GitLab or BitBucket repo</span>
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="field">
+                    <div class="control">
+                        <label for="repo">
+                            <span class="tag is-link">
+                                <span class="icon">
+                                    <i class="fab fa-google"></i>
+                                </span>
+                                <span>Google</span>
+                            </span>
+                        </label>
+                        <input class="switch is-info is-rounded is-outlined" id="repo" type="checkbox" name="repo" />
+                        <label for="repo"></label>
+                        <label for="repo">
+                            <div class="tags">
+                                <span class="tag is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>GitHub</span>
+                                </span>
+                                <span class="tag is-warning">
+                                    <span class="icon">
+                                        <i class="fab fa-gitlab"></i>
+                                    </span>
+                                    <span>GitLab</span>
+                                </span>
+                                <span class="tag is-link">
+                                    <span class="icon">
+                                        <i class="fab fa-bitbucket"></i>
+                                    </span>
+                                    <span>BitBucket</span>
+                                </span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                        <input class="input" id="dependency" type="text" placeholder="group:name:version" />
+                    </div>
+                    <div class="control">
+                        <button class="button is-link" id="dl-button">
+                            <span class="icon">
+                                <i class="fas fa-download"></i>
+                            </span>
+                            <span>Download!</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
